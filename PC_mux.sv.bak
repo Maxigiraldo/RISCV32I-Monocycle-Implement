@@ -1,0 +1,15 @@
+module PC_mux(
+	input wire [31:0] Alu_result,
+	input wire [31:0] address,
+	input wire BrOpEN,
+	output reg [31:0] address_next
+);
+
+always @(*)
+	begin
+		if (BrOpEN)
+			address_next = Alu_result;
+		else
+			address_next = address;
+	end
+endmodule

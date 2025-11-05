@@ -1,0 +1,8 @@
+module Sum4 (
+	input wire [31:0] address,
+	output wire [31:0] adress_next
+);
+
+assign address_next = address + 4'b100;
+
+endmodule

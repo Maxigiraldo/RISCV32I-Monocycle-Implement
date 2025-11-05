@@ -1,0 +1,8 @@
+module Imm_Generator(
+	input wire [31:0] instruction,
+	input wire IMMSrc,
+	output reg [31:0] Imm
+);
+
+
+endmodule

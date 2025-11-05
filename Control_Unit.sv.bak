@@ -1,0 +1,10 @@
+module Control_Unit(
+	input wire [6:0] opcode,
+	input wire [2:0] func3,
+	input wire [6:0] func7,
+	input wire RUWr,
+	input wire [2:0] IMMSrc,
+	
+);
+
+endmodule

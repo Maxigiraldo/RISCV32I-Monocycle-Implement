@@ -1,0 +1,11 @@
+module Register_Unit(
+	input wire clk,
+	input wire rst,
+	input wire [4:0] rs1,
+	input wire [4:0] rs2,
+	input wire [4:0] rd,
+	input wire [31:0] DataWr,
+	input wire RUWr,
+	output reg [31:0] RU1,
+	output reg [31:0] RU2
+);

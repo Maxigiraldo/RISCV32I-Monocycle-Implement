@@ -1,10 +1,21 @@
 module RISCV (
 	input clk,
 	input rst,
-	output wire [31:0] PC,
-	output wire [31:0] Result,
-	output wire [31:0] Recover,
-	output wire [31:0] Inst_View
+	input sw1,
+	input sw2,
+	input sw3,
+	input sw4,
+	output wire [31:0] visualization,
+//	output wire [31:0] PC,
+//	output wire [31:0] Result,
+//	output wire [31:0] Recover,
+//	output wire [31:0] Inst_View
+	output [6:0] hex0,
+	output [6:0] hex1,
+	output [6:0] hex2,
+	output [6:0] hex3,
+	output [6:0] hex4,
+	output [6:0] hex5
 ); 
 
 // Address
@@ -187,9 +198,57 @@ Write_Back_Data Write_Back_Data (
 
 
 // Visualizacion
-assign PC = address;
-assign Result = Alu_result;
-assign Recover = DataRead;
-assign Inst_View = instruction;
+// assign PC = address;
+// assign Result = Alu_result;
+// assign Recover = DataRead;
+// assign Inst_View = instruction;
+
+assign visualization = (!rst)    ? 32'b0 :
+                       (sw1)     ? address :
+                       (sw2)     ? Alu_result :
+                       (sw3)     ? DataRead :
+                       (sw4)     ? instruction :
+                                   32'b0;
+
+wire [3:0] hex_d0;
+wire [3:0] hex_d1;
+wire [3:0] hex_d2;
+wire [3:0] hex_d3;
+wire [3:0] hex_d4;
+wire [3:0] hex_d5;
+
+assign hex_d0 = visualization[3:0];
+assign hex_d1 = visualization[7:4];
+assign hex_d2 = visualization[11:8];
+assign hex_d3 = visualization[15:12];
+assign hex_d4 = visualization[19:16];
+assign hex_d5 = visualization[23:20];
+
+
+hex7seg result5 (
+		.hex_in(hex_d5),
+		.segments(hex5)
+	);
+	
+hex7seg result4 (
+	.hex_in(hex_d4),
+	.segments(hex4)
+);
+hex7seg result3 (
+	.hex_in(hex_d3),
+	.segments(hex3)
+);
+hex7seg result2 (
+	.hex_in(hex_d2),
+	.segments(hex2)
+);
+hex7seg result1 (
+	.hex_in(hex_d1),
+	.segments(hex1)
+);
+hex7seg result0 (
+	.hex_in(hex_d0),
+	.segments(hex0)
+);
 
 endmodule

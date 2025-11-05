@@ -1,0 +1,12 @@
+module Data_Memory(
+	input wire clk,
+	input wire [31:0] address,
+	input wire [31:0] DataWR,
+	input wire DMWR,
+	input wire [2:0] DMCtrl,
+	output reg [31:0] DataRead
+);
+
+reg [31:0] mem [0:1023];
+
+endmodule

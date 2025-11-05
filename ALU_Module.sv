@@ -18,7 +18,7 @@ always @(*) begin
 			4'b1000: Alu_result = ($signed(Term_A) < $signed(Term_B)) ? 1 : 0; // SLT
 			4'b1001: Alu_result = (Term_A < Term_B) ? 1 : 0; // SLTU
 			4'b1010: Alu_result = Term_B; //Pass b (LUI)
-			default: Alu_result = 32'b0;
+			default: Alu_result = 32'h0;
 	endcase
 	end
 

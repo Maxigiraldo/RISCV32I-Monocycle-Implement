@@ -1,0 +1,15 @@
+module AluASrc(
+	input wire [31:0] address,
+	input wire [31:0] RU1,
+	input wire ALUASrcEN,
+	output [31:0] Term_A,
+);
+
+always @(*)
+	begin
+		if (ALUASrcEN)
+			Term_A <= address;
+		else
+			Term_A <= RU1;
+	end
+endmodule

@@ -1,0 +1,15 @@
+module AluBSrc(
+	input wire [31:0] RU2,
+	input wire [31:0] IMM,
+	input wire ALUBSrcEN,
+	output [31:0] Term_B
+);
+
+always @(*)
+	begin
+		if (ALUBSrcEN)
+			Term_B <= IMM;
+		else
+			Term_B <= RU2;
+	end
+endmodule

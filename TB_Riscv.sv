@@ -4,38 +4,89 @@ module TB_Riscv();
 
 reg clk;
 reg rst;
-wire [31:0] PC;
-wire [31:0] Result;
-wire [31:0] Recover;
-wire [31:0] Inst_View;
+reg sw1, sw2, sw3, sw4;
+
+// wire [31:0] PC;
+// wire [31:0] Result;
+// wire [31:0] Recover;
+// wire [31:0] Inst_View;
+wire [6:0] hex0, hex1, hex2, hex3, hex4, hex5;
+wire [31:0] visualization;
 
 RISCV RISCV (
 	.clk(clk),
 	.rst(rst),
-	.PC(PC),
-	.Result(Result),
-	.Recover(Recover),
-	.Inst_View(Inst_View)
+	.sw1(sw1),
+	.sw2(sw2),
+	.sw3(sw3),
+	.sw4(sw4),
+//	.PC(PC),
+//	.Result(Result),
+//	.Recover(Recover),
+//	.Inst_View(Inst_View),
+	.visualization(visualization),
+	.hex0(hex0),
+	.hex1(hex1),
+	.hex2(hex2),
+	.hex3(hex3),
+	.hex4(hex4),
+	.hex5(hex5)
 );
 
-always #5 clk = ~clk;
+always #20 clk = ~clk;
 
 initial begin
 	$display("========== Iniciando Test RISCV ==========\n");
 	
 	// Monitor en cada ciclo
-	$monitor("T=%0t | CLK=%b | RST=%b | PC=%h | Inst=%h | ALU=%h | WB=%h", 
-		$time, clk, rst, PC, 
-		Inst_View, Result, Recover);
+	$monitor("T=%0t | CLK=%b | RST=%b | Visualization=%h | hex5=%h | hex4=%h | hex3=%h | hex2=%h | hex1=%h | hex0=%h", 
+		$time, clk, rst, visualization, hex5, hex4, hex3, hex2, hex1, hex0);
 	
 	clk = 0;
 	rst = 0;
-	#20;
+	sw1 = 1;
+	#25;
 	rst = 1;
+	sw1 = 0;
+	sw2 = 1;
+	#5;
+	sw2 = 0;
+	sw3 = 1;
+	#5;
+	sw3 = 0;
+	sw4 = 1;
+	#5;
+	sw1 = 1;
+	sw4 = 0;
+	#5;
+	sw1 = 0;
+	sw2 = 1;
+	#5;
+	sw2 = 0;
+	sw3 = 1;
+	#5;
+	sw3 = 0;
+	sw4 = 1;
+	#5;
+	sw1 = 1;
+	sw4 = 0;
+	#5;
+	sw1 = 0;
+	sw2 = 1;
+	#5;
+	sw2 = 0;
+	sw3 = 1;
+	#5;
+	sw3 = 0;
+	sw4 = 1;
+	#5;
+	sw1 = 1;
+	sw4 = 0;
+	#5;
+	
 	#500;
 	// Mostrar estado final
 	$display("\n========== Estado Final (t=%0t) ==========", $time);
-	$display("PC final = 0x%h", PC);
 	$display("\n--- Registros ---");
 	$display("x1 = 0x%h", RISCV.Registers_Unit.registers_mem[1]);
 	$display("x2 = 0x%h", RISCV.Registers_Unit.registers_mem[2]);

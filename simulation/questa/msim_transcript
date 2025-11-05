@@ -1,0 +1,262 @@
+# Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do RISCV_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Program_Counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:32 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Program_Counter.sv 
+# -- Compiling module Program_Counter
+# 
+# Top level modules:
+# 	Program_Counter
+# End time: 15:30:32 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/RISCV.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/RISCV.sv 
+# -- Compiling module RISCV
+# 
+# Top level modules:
+# 	RISCV
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv 
+# -- Compiling module Registers_Unit
+# 
+# Top level modules:
+# 	Registers_Unit
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Imm_Generator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Imm_Generator.sv 
+# -- Compiling module Imm_Generator
+# 
+# Top level modules:
+# 	Imm_Generator
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluASrc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluASrc.sv 
+# -- Compiling module AluASrc
+# 
+# Top level modules:
+# 	AluASrc
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluBSrc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluBSrc.sv 
+# -- Compiling module AluBSrc
+# 
+# Top level modules:
+# 	AluBSrc
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv 
+# -- Compiling module ALU_Module
+# 
+# Top level modules:
+# 	ALU_Module
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Branch_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Branch_Unit.sv 
+# -- Compiling module Branch_Unit
+# 
+# Top level modules:
+# 	Branch_Unit
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Sum4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Sum4.sv 
+# -- Compiling module Sum4
+# 
+# Top level modules:
+# 	Sum4
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/PC_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/PC_mux.sv 
+# -- Compiling module PC_mux
+# 
+# Top level modules:
+# 	PC_mux
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv 
+# -- Compiling module Data_Memory
+# 
+# Top level modules:
+# 	Data_Memory
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Write_Back_Data.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Write_Back_Data.sv 
+# -- Compiling module Write_Back_Data
+# 
+# Top level modules:
+# 	Write_Back_Data
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv 
+# -- Compiling module hex7seg
+# 
+# Top level modules:
+# 	hex7seg
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Instruction_Memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Instruction_Memory.sv 
+# -- Compiling module Instruction_Memory
+# 
+# Top level modules:
+# 	Instruction_Memory
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:30:33 on Nov 05,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv 
+# -- Compiling module TB_Riscv
+# 
+# Top level modules:
+# 	TB_Riscv
+# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TB_Riscv
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TB_Riscv 
+# Start time: 15:30:33 on Nov 05,2025
+# Loading sv_std.std
+# Loading work.TB_Riscv
+# Loading work.RISCV
+# Loading work.Control_Unit
+# Loading work.Program_Counter
+# Loading work.Sum4
+# Loading work.PC_mux
+# Loading work.Instruction_Memory
+# Loading work.Registers_Unit
+# Loading work.Imm_Generator
+# Loading work.AluASrc
+# Loading work.AluBSrc
+# Loading work.ALU_Module
+# Loading work.Branch_Unit
+# Loading work.Data_Memory
+# Loading work.Write_Back_Data
+# Loading work.hex7seg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ========== Iniciando Test RISCV ==========
+# 
+# T=0 | CLK=0 | RST=0 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
+# T=20000 | CLK=1 | RST=0 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
+# T=25000 | CLK=1 | RST=1 | Visualization=00000005 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=12
+# T=30000 | CLK=1 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
+# T=35000 | CLK=1 | RST=1 | Visualization=00500093 | hex5=12 | hex4=40 | hex3=40 | hex2=40 | hex1=10 | hex0=30
+# T=40000 | CLK=0 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
+# T=45000 | CLK=0 | RST=1 | Visualization=00000005 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=12
+# T=50000 | CLK=0 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
+# T=55000 | CLK=0 | RST=1 | Visualization=00500093 | hex5=12 | hex4=40 | hex3=40 | hex2=40 | hex1=10 | hex0=30
+# T=60000 | CLK=1 | RST=1 | Visualization=00000004 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=19
+# T=65000 | CLK=1 | RST=1 | Visualization=00000005 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=12
+# T=70000 | CLK=1 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
+# T=75000 | CLK=1 | RST=1 | Visualization=00500113 | hex5=12 | hex4=40 | hex3=40 | hex2=79 | hex1=79 | hex0=30
+# T=80000 | CLK=0 | RST=1 | Visualization=00000004 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=19
+# T=100000 | CLK=1 | RST=1 | Visualization=00000008 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=00
+# T=120000 | CLK=0 | RST=1 | Visualization=00000008 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=00
+# T=140000 | CLK=1 | RST=1 | Visualization=0000000c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=46
+# T=160000 | CLK=0 | RST=1 | Visualization=0000000c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=46
+# T=180000 | CLK=1 | RST=1 | Visualization=00000010 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=40
+# T=200000 | CLK=0 | RST=1 | Visualization=00000010 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=40
+# T=220000 | CLK=1 | RST=1 | Visualization=0000001c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=46
+# T=240000 | CLK=0 | RST=1 | Visualization=0000001c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=46
+# T=260000 | CLK=1 | RST=1 | Visualization=00000024 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=19
+# T=280000 | CLK=0 | RST=1 | Visualization=00000024 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=19
+# T=300000 | CLK=1 | RST=1 | Visualization=00000028 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=00
+# T=320000 | CLK=0 | RST=1 | Visualization=00000028 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=00
+# T=340000 | CLK=1 | RST=1 | Visualization=0000002c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=46
+# T=360000 | CLK=0 | RST=1 | Visualization=0000002c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=46
+# T=380000 | CLK=1 | RST=1 | Visualization=00000030 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=40
+# T=400000 | CLK=0 | RST=1 | Visualization=00000030 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=40
+# T=420000 | CLK=1 | RST=1 | Visualization=00000034 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=19
+# T=440000 | CLK=0 | RST=1 | Visualization=00000034 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=19
+# T=460000 | CLK=1 | RST=1 | Visualization=00000038 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=00
+# T=480000 | CLK=0 | RST=1 | Visualization=00000038 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=00
+# T=500000 | CLK=1 | RST=1 | Visualization=0000003c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=46
+# T=520000 | CLK=0 | RST=1 | Visualization=0000003c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=46
+# T=540000 | CLK=1 | RST=1 | Visualization=00000040 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=19 | hex0=40
+# T=560000 | CLK=0 | RST=1 | Visualization=00000040 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=19 | hex0=40
+# T=580000 | CLK=1 | RST=1 | Visualization=00000044 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=19 | hex0=19
+# 
+# ========== Estado Final (t=585000) ==========
+# 
+# --- Registros ---
+# x1 = 0x00000005
+# x2 = 0x00000005
+# x3 = 0x0000000a
+# x4 = 0x00000000
+# 
+# --- Data Memory ---
+# mem[0] = 0x0000000a
+# mem[1] = 0x00000000
+# 
+# ========== Test Finalizado ==========
+# ** Note: $finish    : C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv(101)
+#    Time: 585 ns  Iteration: 0  Instance: /TB_Riscv
+# 1
+# Break in Module TB_Riscv at C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv line 101
+# End time: 15:30:44 on Nov 05,2025, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0

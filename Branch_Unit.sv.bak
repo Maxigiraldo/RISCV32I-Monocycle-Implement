@@ -1,0 +1,12 @@
+module Branch_Unit(
+	input wire [31:0] RU1,
+	input wire [31:0] RU2,
+	input wire [4:0] BrOP,
+	output reg BrEN
+);
+
+always @(*)
+	begin
+		if (BrOP)
+	end
+endmodule
