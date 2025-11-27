@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/simulation/questa
 vALU_Module
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1762374633
+Z2 !s110 1764210278
 !i10b 1
 !s100 `GODJzXc_FKP>X0J6k91W2
 I3gaoAEd1=Y?zSU3[3]S_T2
@@ -26,7 +26,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1762374633.000000
+Z5 !s108 1764210278.000000
 !s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv|
 !i113 1
@@ -112,17 +112,42 @@ R6
 R7
 R8
 n@branch_@unit
-vControl_Unit
+vclock1280x800
 R1
 R2
 !i10b 1
-!s100 X9R`bDl;c^TZPKMB57H1G2
-I]IL[ZGZ6FRLW8IcM9l>An1
+!s100 A^2J6XHfVj8h6QNLK3SAf2
+ImESSFEN>S^`<0Fec>]ka]0
+R3
+Z9 !s105 VGA_Controller_sv_unit
+S1
+R0
+Z10 w1764209049
+Z11 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv
+Z12 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv
+L0 427
+R4
+r1
+!s85 0
+31
+Z13 !s108 1764210277.000000
+Z14 !s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv|
+!i113 1
+R6
+R7
+R8
+vControl_Unit
+R1
+Z16 !s110 1764210279
+!i10b 1
+!s100 cVmz>XTg;1lefZ9BVVe<X1
+IgJ>JO_T=`YQk[Q;H_Gzj31
 R3
 !s105 Control_Unit_sv_unit
 S1
 R0
-w1762084065
+w1762379348
 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv
 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv
 L0 1
@@ -130,7 +155,7 @@ R4
 r1
 !s85 0
 31
-R5
+Z17 !s108 1764210279.000000
 !s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv|
 !i113 1
@@ -142,13 +167,13 @@ vData_Memory
 R1
 R2
 !i10b 1
-!s100 a=2_Eb^J7TBFE`d;_l_o[0
-I0mcUZ2EPg5alT<E_Wo;bm2
+!s100 zVg96<OSbjkkg:^f=;AUQ0
+I3URk6?j@Qa@R_F?QbM[^J3
 R3
 !s105 Data_Memory_sv_unit
 S1
 R0
-w1762084361
+w1762537937
 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv
 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv
 L0 1
@@ -166,7 +191,7 @@ R8
 n@data_@memory
 vhex7seg
 R1
-R2
+R16
 !i10b 1
 !s100 _mED]z<FN_WeVTk9J4PCT1
 IR<2MgN]ULI3zP3^K;UHb<2
@@ -182,7 +207,7 @@ R4
 r1
 !s85 0
 31
-R5
+R17
 !s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv|
 !i113 1
@@ -219,13 +244,13 @@ vInstruction_Memory
 R1
 R2
 !i10b 1
-!s100 dFc8X]M7:_GD>aQA_jN673
-IYT4YlNz`9LT3Djn3PGJnd1
+!s100 F9?SFWmIVJF:SNe?^oUSm2
+I9Ef2F9VIWWKh5Y9R`LXfd3
 R3
 !s105 Instruction_Memory_sv_unit
 S1
 R0
-w1762203444
+w1762535456
 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Instruction_Memory.sv
 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Instruction_Memory.sv
 L0 1
@@ -269,7 +294,7 @@ R8
 n@p@c_mux
 vProgram_Counter
 R1
-!s110 1762374632
+R2
 !i10b 1
 !s100 ]DUE;4]eZ_jdUV2Z29WXG3
 I_mQTJz6F^74EZiIFeBJTo1
@@ -285,7 +310,7 @@ R4
 r1
 !s85 0
 31
-!s108 1762374632.000000
+R5
 !s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Program_Counter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Program_Counter.sv|
 !i113 1
@@ -297,13 +322,13 @@ vRegisters_Unit
 R1
 R2
 !i10b 1
-!s100 <R0WKbW:m2eHTkzn]SiY]1
-IB6U9ZM<Mcb6TR^BNcaJ9e3
+!s100 Ceef[1Jfg4E7PHfEjm^jB3
+IGOJUGz9z`5;@[nc>VRRfP0
 R3
 !s105 Registers_Unit_sv_unit
 S1
 R0
-w1762084347
+w1764164876
 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv
 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv
 L0 1
@@ -323,13 +348,13 @@ vRISCV
 R1
 R2
 !i10b 1
-!s100 =jSj[L=YIfF`CQkEOY>W>0
-I;@81nSQg9La@X0bhb>;_C2
+!s100 aQ2dNJl@iOo4R@jEOWTRH1
+IgOAoHKn6bJf7^jYlc?nI@3
 R3
 !s105 RISCV_sv_unit
 S1
 R0
-w1762225539
+w1764166045
 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/RISCV.sv
 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/RISCV.sv
 L0 1
@@ -373,15 +398,15 @@ R8
 n@sum4
 vTB_Riscv
 R1
-R2
+R16
 !i10b 1
-!s100 N9>AM63L1;6ZeQGkLLkjX2
-Ik4DDE<S>REIzgdF@F]9UP2
+!s100 k<hJOHHMe4foGRPEeSIV`1
+I_j3XDg=k[zN;?f0DYe09h2
 R3
 !s105 TB_Riscv_sv_unit
 S1
 R0
-w1762225481
+w1764187288
 8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv
 FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv
 L0 3
@@ -389,7 +414,7 @@ R4
 r1
 !s85 0
 31
-R5
+R17
 !s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv|
 !i113 1
@@ -397,6 +422,83 @@ R6
 R7
 R8
 n@t@b_@riscv
+vTop_module_RISCV
+R1
+R16
+!i10b 1
+!s100 jUf4W3hXS9?z>;i7:KHbX1
+IAN8^<4zWe;j`aAgKn6J6N1
+R3
+!s105 Top_module_RISCV_sv_unit
+S1
+R0
+w1764208965
+8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv
+FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv|
+!i113 1
+R6
+R7
+R8
+n@top_module_@r@i@s@c@v
+vVGA_Controller
+R1
+R2
+!i10b 1
+!s100 QkZ]nMS9QRe2[fWW[Q?2]0
+IgZJQVZ4@19hzAhlU:X0991
+R3
+R9
+S1
+R0
+R10
+R11
+R12
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R6
+R7
+R8
+n@v@g@a_@controller
+vvga_controller_1280x800
+R1
+R2
+!i10b 1
+!s100 ]MIBkUnPLOCEJZ[QCLHl;1
+I@naLS5Pkh:HQ0S:ZYmQEZ2
+R3
+R9
+S1
+R0
+R10
+R11
+R12
+L0 441
+R4
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 1
+R6
+R7
+R8
 vWrite_Back_Data
 R1
 R2

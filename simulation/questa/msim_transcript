@@ -1,5 +1,5 @@
 # Reading C:/intelFPGA/19.1/modelsim_ase/tcl/vsim/pref.tcl
-# do RISCV_run_msim_rtl_verilog.do
+# do RISCV_run_msim_rtl_systemverilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,173 +10,242 @@
 # Copying C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlib vgaClock
+# ** Warning: (vlib-34) Library already exists at "vgaClock".
+# vmap vgaClock vgaClock
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap vgaClock vgaClock 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work vgaClock +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/vgaClock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:37 on Nov 26,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/vgaClock.v 
+# -- Compiling module vgaClock
+# 
+# Top level modules:
+# 	vgaClock
+# End time: 21:24:37 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work vgaClock +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:37 on Nov 26,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0.v 
+# -- Compiling module vgaClock_video_pll_0
+# 
+# Top level modules:
+# 	vgaClock_video_pll_0
+# End time: 21:24:37 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work vgaClock +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:37 on Nov 26,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v 
+# -- Compiling module altera_up_avalon_reset_from_locked_signal
+# 
+# Top level modules:
+# 	altera_up_avalon_reset_from_locked_signal
+# End time: 21:24:37 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work vgaClock +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:37 on Nov 26,2025
+# vlog -reportprogress 300 -vlog01compat -work vgaClock "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v 
+# -- Compiling module vgaClock_video_pll_0_video_pll
+# 
+# Top level modules:
+# 	vgaClock_video_pll_0_video_pll
+# End time: 21:24:37 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:37 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv 
+# -- Compiling module VGA_Controller
+# -- Compiling module clock1280x800
+# -- Compiling module vga_controller_1280x800
+# 
+# Top level modules:
+# 	VGA_Controller
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Program_Counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:32 on Nov 05,2025
+# Start time: 21:24:38 on Nov 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Program_Counter.sv 
 # -- Compiling module Program_Counter
 # 
 # Top level modules:
 # 	Program_Counter
-# End time: 15:30:32 on Nov 05,2025, Elapsed time: 0:00:00
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/RISCV.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
+# Start time: 21:24:38 on Nov 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/RISCV.sv 
 # -- Compiling module RISCV
 # 
 # Top level modules:
 # 	RISCV
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv 
-# -- Compiling module Registers_Unit
-# 
-# Top level modules:
-# 	Registers_Unit
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Imm_Generator.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Imm_Generator.sv 
-# -- Compiling module Imm_Generator
-# 
-# Top level modules:
-# 	Imm_Generator
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluASrc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluASrc.sv 
-# -- Compiling module AluASrc
-# 
-# Top level modules:
-# 	AluASrc
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluBSrc.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluBSrc.sv 
-# -- Compiling module AluBSrc
-# 
-# Top level modules:
-# 	AluBSrc
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv 
-# -- Compiling module ALU_Module
-# 
-# Top level modules:
-# 	ALU_Module
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Branch_Unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Branch_Unit.sv 
-# -- Compiling module Branch_Unit
-# 
-# Top level modules:
-# 	Branch_Unit
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Sum4.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Sum4.sv 
-# -- Compiling module Sum4
-# 
-# Top level modules:
-# 	Sum4
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/PC_mux.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/PC_mux.sv 
-# -- Compiling module PC_mux
-# 
-# Top level modules:
-# 	PC_mux
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv 
-# -- Compiling module Data_Memory
-# 
-# Top level modules:
-# 	Data_Memory
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Write_Back_Data.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Write_Back_Data.sv 
-# -- Compiling module Write_Back_Data
-# 
-# Top level modules:
-# 	Write_Back_Data
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv 
-# -- Compiling module Control_Unit
-# 
-# Top level modules:
-# 	Control_Unit
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv 
-# -- Compiling module hex7seg
-# 
-# Top level modules:
-# 	hex7seg
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Instruction_Memory.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
+# Start time: 21:24:38 on Nov 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Instruction_Memory.sv 
 # -- Compiling module Instruction_Memory
 # 
 # Top level modules:
 # 	Instruction_Memory
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Registers_Unit.sv 
+# -- Compiling module Registers_Unit
+# 
+# Top level modules:
+# 	Registers_Unit
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Imm_Generator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Imm_Generator.sv 
+# -- Compiling module Imm_Generator
+# 
+# Top level modules:
+# 	Imm_Generator
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluASrc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluASrc.sv 
+# -- Compiling module AluASrc
+# 
+# Top level modules:
+# 	AluASrc
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluBSrc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/AluBSrc.sv 
+# -- Compiling module AluBSrc
+# 
+# Top level modules:
+# 	AluBSrc
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/ALU_Module.sv 
+# -- Compiling module ALU_Module
+# 
+# Top level modules:
+# 	ALU_Module
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Branch_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Branch_Unit.sv 
+# -- Compiling module Branch_Unit
+# 
+# Top level modules:
+# 	Branch_Unit
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Sum4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Sum4.sv 
+# -- Compiling module Sum4
+# 
+# Top level modules:
+# 	Sum4
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/PC_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/PC_mux.sv 
+# -- Compiling module PC_mux
+# 
+# Top level modules:
+# 	PC_mux
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Data_Memory.sv 
+# -- Compiling module Data_Memory
+# 
+# Top level modules:
+# 	Data_Memory
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Write_Back_Data.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:38 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Write_Back_Data.sv 
+# -- Compiling module Write_Back_Data
+# 
+# Top level modules:
+# 	Write_Back_Data
+# End time: 21:24:38 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:39 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Control_Unit.sv 
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# End time: 21:24:39 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:39 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/hex7seg.sv 
+# -- Compiling module hex7seg
+# 
+# Top level modules:
+# 	hex7seg
+# End time: 21:24:39 on Nov 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:24:39 on Nov 26,2025
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv 
+# -- Compiling module Top_module_RISCV
+# 
+# Top level modules:
+# 	Top_module_RISCV
+# End time: 21:24:39 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design {C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:30:33 on Nov 05,2025
+# Start time: 21:24:39 on Nov 26,2025
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design" C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv 
 # -- Compiling module TB_Riscv
 # 
 # Top level modules:
 # 	TB_Riscv
-# End time: 15:30:33 on Nov 05,2025, Elapsed time: 0:00:00
+# End time: 21:24:39 on Nov 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TB_Riscv
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TB_Riscv 
-# Start time: 15:30:33 on Nov 05,2025
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L vgaClock -voptargs="+acc"  TB_Riscv
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L vgaClock -voptargs=""+acc"" TB_Riscv 
+# Start time: 21:24:39 on Nov 26,2025
 # Loading sv_std.std
 # Loading work.TB_Riscv
+# Loading work.Top_module_RISCV
 # Loading work.RISCV
 # Loading work.Control_Unit
 # Loading work.Program_Counter
@@ -191,72 +260,52 @@
 # Loading work.Branch_Unit
 # Loading work.Data_Memory
 # Loading work.Write_Back_Data
+# Loading work.VGA_Controller
+# Loading work.clock1280x800
+# Loading vgaClock.vgaClock
+# Loading vgaClock.vgaClock_video_pll_0
+# Loading vgaClock.vgaClock_video_pll_0_video_pll
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading vgaClock.altera_up_avalon_reset_from_locked_signal
+# Loading work.vga_controller_1280x800
 # Loading work.hex7seg
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ========== Iniciando Test RISCV ==========
-# 
-# T=0 | CLK=0 | RST=0 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
-# T=20000 | CLK=1 | RST=0 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
-# T=25000 | CLK=1 | RST=1 | Visualization=00000005 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=12
-# T=30000 | CLK=1 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
-# T=35000 | CLK=1 | RST=1 | Visualization=00500093 | hex5=12 | hex4=40 | hex3=40 | hex2=40 | hex1=10 | hex0=30
-# T=40000 | CLK=0 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
-# T=45000 | CLK=0 | RST=1 | Visualization=00000005 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=12
-# T=50000 | CLK=0 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
-# T=55000 | CLK=0 | RST=1 | Visualization=00500093 | hex5=12 | hex4=40 | hex3=40 | hex2=40 | hex1=10 | hex0=30
-# T=60000 | CLK=1 | RST=1 | Visualization=00000004 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=19
-# T=65000 | CLK=1 | RST=1 | Visualization=00000005 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=12
-# T=70000 | CLK=1 | RST=1 | Visualization=00000000 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=40
-# T=75000 | CLK=1 | RST=1 | Visualization=00500113 | hex5=12 | hex4=40 | hex3=40 | hex2=79 | hex1=79 | hex0=30
-# T=80000 | CLK=0 | RST=1 | Visualization=00000004 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=19
-# T=100000 | CLK=1 | RST=1 | Visualization=00000008 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=00
-# T=120000 | CLK=0 | RST=1 | Visualization=00000008 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=00
-# T=140000 | CLK=1 | RST=1 | Visualization=0000000c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=46
-# T=160000 | CLK=0 | RST=1 | Visualization=0000000c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=40 | hex0=46
-# T=180000 | CLK=1 | RST=1 | Visualization=00000010 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=40
-# T=200000 | CLK=0 | RST=1 | Visualization=00000010 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=40
-# T=220000 | CLK=1 | RST=1 | Visualization=0000001c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=46
-# T=240000 | CLK=0 | RST=1 | Visualization=0000001c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=79 | hex0=46
-# T=260000 | CLK=1 | RST=1 | Visualization=00000024 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=19
-# T=280000 | CLK=0 | RST=1 | Visualization=00000024 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=19
-# T=300000 | CLK=1 | RST=1 | Visualization=00000028 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=00
-# T=320000 | CLK=0 | RST=1 | Visualization=00000028 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=00
-# T=340000 | CLK=1 | RST=1 | Visualization=0000002c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=46
-# T=360000 | CLK=0 | RST=1 | Visualization=0000002c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=24 | hex0=46
-# T=380000 | CLK=1 | RST=1 | Visualization=00000030 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=40
-# T=400000 | CLK=0 | RST=1 | Visualization=00000030 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=40
-# T=420000 | CLK=1 | RST=1 | Visualization=00000034 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=19
-# T=440000 | CLK=0 | RST=1 | Visualization=00000034 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=19
-# T=460000 | CLK=1 | RST=1 | Visualization=00000038 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=00
-# T=480000 | CLK=0 | RST=1 | Visualization=00000038 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=00
-# T=500000 | CLK=1 | RST=1 | Visualization=0000003c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=46
-# T=520000 | CLK=0 | RST=1 | Visualization=0000003c | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=30 | hex0=46
-# T=540000 | CLK=1 | RST=1 | Visualization=00000040 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=19 | hex0=40
-# T=560000 | CLK=0 | RST=1 | Visualization=00000040 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=19 | hex0=40
-# T=580000 | CLK=1 | RST=1 | Visualization=00000044 | hex5=40 | hex4=40 | hex3=40 | hex2=40 | hex1=19 | hex0=19
-# 
-# ========== Estado Final (t=585000) ==========
-# 
-# --- Registros ---
-# x1 = 0x00000005
-# x2 = 0x00000005
-# x3 = 0x0000000a
-# x4 = 0x00000000
-# 
-# --- Data Memory ---
-# mem[0] = 0x0000000a
-# mem[1] = 0x00000000
-# 
-# ========== Test Finalizado ==========
-# ** Note: $finish    : C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv(101)
-#    Time: 585 ns  Iteration: 0  Instance: /TB_Riscv
-# 1
-# Break in Module TB_Riscv at C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv line 101
-# End time: 15:30:44 on Nov 05,2025, Elapsed time: 0:00:11
-# Errors: 0, Warnings: 0
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Error: (vsim-3043) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv(94): Unresolved reference to 'RISCV'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_Riscv File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv
+# ** Error: (vsim-3043) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv(45): Unresolved reference to 'vga_clock'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_Riscv File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv
+# ** Warning: (vsim-3017) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv(14): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_Riscv/Top_module_RISCV File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/Top_module_RISCV.sv
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/TB_Riscv.sv(14): [TFMPC] - Missing connection for port 'rst_dedicated'.
+# ** Warning: (vsim-3017) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Too few port connections. Expected 26, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_Riscv/Top_module_RISCV/VGA_Controller/vgaclock/clk/video_pll_0/video_pll/altera_pll_i File: /build/swbuild/SJ/nightly/19.1std/670/l64/work/modelsim/eda/sim_lib/altera_lnsim.sv
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'refclk1'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'phase_en'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'updn'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'num_phase_shifts'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'scanclk'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'cntsel'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'reconfig_to_pll'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'extswitch'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'adjpllin'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'cclk'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'phase_done'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'reconfig_from_pll'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'activeclk'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'clkbad'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'phout'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'lvds_clk'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'loaden'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'extclk_out'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'cascade_out'.
+# ** Warning: (vsim-3722) C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v(84): [TFMPC] - Missing connection for port 'zdbfbclk'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./RISCV_run_msim_rtl_systemverilog.do PAUSED at line 34
+# End time: 21:24:48 on Nov 26,2025, Elapsed time: 0:00:09
+# Errors: 2, Warnings: 23

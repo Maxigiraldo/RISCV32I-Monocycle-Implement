@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY RISCV
+set_global_assignment -name TOP_LEVEL_ENTITY Top_module_RISCV
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:05:36  OCTOBER 31, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
@@ -54,24 +54,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name SYSTEMVERILOG_FILE Program_Counter.sv
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE RISCV.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Instruction_Memory.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Registers_Unit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Imm_Generator.sv
-set_global_assignment -name SYSTEMVERILOG_FILE AluASrc.sv
-set_global_assignment -name SYSTEMVERILOG_FILE AluBSrc.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ALU_Module.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Branch_Unit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Sum4.sv
-set_global_assignment -name SYSTEMVERILOG_FILE PC_mux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Data_Memory.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Write_Back_Data.sv
-set_global_assignment -name SYSTEMVERILOG_FILE Control_Unit.sv
-set_global_assignment -name SYSTEMVERILOG_FILE TB_Riscv.sv
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
@@ -82,6 +64,56 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TB_Riscv -section_id TB_R
 set_global_assignment -name EDA_TEST_BENCH_FILE TB_Riscv.sv -section_id TB_Riscv
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_location_assignment PIN_AA14 -to rst
+set_location_assignment PIN_AA15 -to clk
+set_location_assignment PIN_AB12 -to sw1
+set_location_assignment PIN_AC12 -to sw2
+set_location_assignment PIN_AF9 -to sw3
+set_location_assignment PIN_AF10 -to sw4
+set_location_assignment PIN_AE26 -to hex0[0]
+set_location_assignment PIN_AE27 -to hex0[1]
+set_location_assignment PIN_AE28 -to hex0[2]
+set_location_assignment PIN_AG27 -to hex0[3]
+set_location_assignment PIN_AF28 -to hex0[4]
+set_location_assignment PIN_AG28 -to hex0[5]
+set_location_assignment PIN_AH28 -to hex0[6]
+set_location_assignment PIN_AJ29 -to hex1[0]
+set_location_assignment PIN_AH29 -to hex1[1]
+set_location_assignment PIN_AH30 -to hex1[2]
+set_location_assignment PIN_AG30 -to hex1[3]
+set_location_assignment PIN_AF29 -to hex1[4]
+set_location_assignment PIN_AF30 -to hex1[5]
+set_location_assignment PIN_AD27 -to hex1[6]
+set_location_assignment PIN_AB23 -to hex2[0]
+set_location_assignment PIN_AE29 -to hex2[1]
+set_location_assignment PIN_AD29 -to hex2[2]
+set_location_assignment PIN_AC28 -to hex2[3]
+set_location_assignment PIN_AD30 -to hex2[4]
+set_location_assignment PIN_AC29 -to hex2[5]
+set_location_assignment PIN_AC30 -to hex2[6]
+set_location_assignment PIN_AD26 -to hex3[0]
+set_location_assignment PIN_AC27 -to hex3[1]
+set_location_assignment PIN_AD25 -to hex3[2]
+set_location_assignment PIN_AC25 -to hex3[3]
+set_location_assignment PIN_AB28 -to hex3[4]
+set_location_assignment PIN_AB25 -to hex3[5]
+set_location_assignment PIN_AB22 -to hex3[6]
+set_location_assignment PIN_AA24 -to hex4[0]
+set_location_assignment PIN_Y23 -to hex4[1]
+set_location_assignment PIN_Y24 -to hex4[2]
+set_location_assignment PIN_W22 -to hex4[3]
+set_location_assignment PIN_W24 -to hex4[4]
+set_location_assignment PIN_V23 -to hex4[5]
+set_location_assignment PIN_W25 -to hex4[6]
+set_location_assignment PIN_V25 -to hex5[0]
+set_location_assignment PIN_AA28 -to hex5[1]
+set_location_assignment PIN_Y27 -to hex5[2]
+set_location_assignment PIN_AB27 -to hex5[3]
+set_location_assignment PIN_AB26 -to hex5[4]
+set_location_assignment PIN_AA26 -to hex5[5]
+set_location_assignment PIN_AA25 -to hex5[6]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rst
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Result[0]
@@ -212,8 +244,6 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Inst_View[28]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Inst_View[29]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Inst_View[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Inst_View[31]
-set_location_assignment PIN_AA15 -to clk
-set_global_assignment -name SYSTEMVERILOG_FILE hex7seg.sv
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw1
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw2
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sw3
@@ -292,50 +322,81 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to visualization[28]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to visualization[29]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to visualization[30]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to visualization[31]
-set_location_assignment PIN_AB12 -to sw1
-set_location_assignment PIN_AC12 -to sw2
-set_location_assignment PIN_AF9 -to sw3
-set_location_assignment PIN_AF10 -to sw4
-set_location_assignment PIN_AE26 -to hex0[0]
-set_location_assignment PIN_AE27 -to hex0[1]
-set_location_assignment PIN_AE28 -to hex0[2]
-set_location_assignment PIN_AG27 -to hex0[3]
-set_location_assignment PIN_AF28 -to hex0[4]
-set_location_assignment PIN_AG28 -to hex0[5]
-set_location_assignment PIN_AH28 -to hex0[6]
-set_location_assignment PIN_AJ29 -to hex1[0]
-set_location_assignment PIN_AH29 -to hex1[1]
-set_location_assignment PIN_AH30 -to hex1[2]
-set_location_assignment PIN_AG30 -to hex1[3]
-set_location_assignment PIN_AF29 -to hex1[4]
-set_location_assignment PIN_AF30 -to hex1[5]
-set_location_assignment PIN_AD27 -to hex1[6]
-set_location_assignment PIN_AB23 -to hex2[0]
-set_location_assignment PIN_AE29 -to hex2[1]
-set_location_assignment PIN_AD29 -to hex2[2]
-set_location_assignment PIN_AC28 -to hex2[3]
-set_location_assignment PIN_AD30 -to hex2[4]
-set_location_assignment PIN_AC29 -to hex2[5]
-set_location_assignment PIN_AC30 -to hex2[6]
-set_location_assignment PIN_AD26 -to hex3[0]
-set_location_assignment PIN_AC27 -to hex3[1]
-set_location_assignment PIN_AD25 -to hex3[2]
-set_location_assignment PIN_AC25 -to hex3[3]
-set_location_assignment PIN_AB28 -to hex3[4]
-set_location_assignment PIN_AB25 -to hex3[5]
-set_location_assignment PIN_AB22 -to hex3[6]
-set_location_assignment PIN_AA24 -to hex4[0]
-set_location_assignment PIN_Y23 -to hex4[1]
-set_location_assignment PIN_Y24 -to hex4[2]
-set_location_assignment PIN_W22 -to hex4[3]
-set_location_assignment PIN_W24 -to hex4[4]
-set_location_assignment PIN_V23 -to hex4[5]
-set_location_assignment PIN_W25 -to hex4[6]
-set_location_assignment PIN_V25 -to hex5[0]
-set_location_assignment PIN_AA28 -to hex5[1]
-set_location_assignment PIN_Y27 -to hex5[2]
-set_location_assignment PIN_AB27 -to hex5[3]
-set_location_assignment PIN_AB26 -to hex5[4]
-set_location_assignment PIN_AA26 -to hex5[5]
-set_location_assignment PIN_AA25 -to hex5[6]
+set_location_assignment PIN_J14 -to vga_blue[7]
+set_location_assignment PIN_G15 -to vga_blue[6]
+set_location_assignment PIN_F15 -to vga_blue[5]
+set_location_assignment PIN_H14 -to vga_blue[4]
+set_location_assignment PIN_F14 -to vga_blue[3]
+set_location_assignment PIN_H13 -to vga_blue[2]
+set_location_assignment PIN_G13 -to vga_blue[1]
+set_location_assignment PIN_B13 -to vga_blue[0]
+set_location_assignment PIN_A11 -to vga_clock
+set_location_assignment PIN_E11 -to vga_green[7]
+set_location_assignment PIN_F11 -to vga_green[6]
+set_location_assignment PIN_G12 -to vga_green[5]
+set_location_assignment PIN_G11 -to vga_green[4]
+set_location_assignment PIN_G10 -to vga_green[3]
+set_location_assignment PIN_H12 -to vga_green[2]
+set_location_assignment PIN_J10 -to vga_green[1]
+set_location_assignment PIN_J9 -to vga_green[0]
+set_location_assignment PIN_B11 -to vga_hsync
+set_location_assignment PIN_F13 -to vga_red[7]
+set_location_assignment PIN_E12 -to vga_red[6]
+set_location_assignment PIN_D12 -to vga_red[5]
+set_location_assignment PIN_C12 -to vga_red[4]
+set_location_assignment PIN_B12 -to vga_red[3]
+set_location_assignment PIN_E13 -to vga_red[2]
+set_location_assignment PIN_C13 -to vga_red[1]
+set_location_assignment PIN_A13 -to vga_red[0]
+set_location_assignment PIN_D11 -to vga_vsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_vsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_hsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_red[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_clock
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_green[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to vga_blue[0]
+set_location_assignment PIN_AF14 -to clk_dedicated
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_dedicated
+set_global_assignment -name QIP_FILE vgaClock/synthesis/vgaClock.qip
+set_global_assignment -name SYSTEMVERILOG_FILE VGA_Controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Program_Counter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISCV.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Instruction_Memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Registers_Unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Imm_Generator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE AluASrc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE AluBSrc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ALU_Module.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Branch_Unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Sum4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PC_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Data_Memory.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Write_Back_Data.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Control_Unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE TB_Riscv.sv
+set_global_assignment -name SYSTEMVERILOG_FILE hex7seg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Top_module_RISCV.sv
+set_location_assignment PIN_AD11 -to rst_dedicated
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rst_dedicated
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

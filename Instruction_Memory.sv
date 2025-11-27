@@ -2,7 +2,7 @@ module Instruction_Memory(
 	input [31:0] address, 
 	output wire [31:0] instruction 
 ); 
-reg [31:0] mem [0:1023];
+reg [31:0] mem [0:100];
 
 initial 
 	begin 

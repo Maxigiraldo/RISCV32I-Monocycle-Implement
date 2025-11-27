@@ -7,7 +7,8 @@ module Registers_Unit(
 	input [31:0] DataWr, 
 	input RUWr, 
 	output wire [31:0] RU1, 
-	output wire [31:0] RU2 
+	output wire [31:0] RU2,
+	output wire [31:0] registers_out [0:31]
 ); 
 
 reg [31:0] registers_mem [0:31]; 
@@ -16,6 +17,13 @@ integer i;
 
 assign RU1 = (rs1 == 0) ? 32'h0 : registers_mem[rs1];
 assign RU2 = (rs2 == 0) ? 32'h0 : registers_mem[rs2]; 
+
+genvar gi;
+  generate
+    for (gi = 0; gi < 32; gi = gi + 1) begin : REG_OUT_GEN
+      assign registers_out[gi] = registers_mem[gi];
+    end
+  endgenerate
 
 always @(posedge clk) 
 	begin 
@@ -26,5 +34,5 @@ always @(posedge clk)
 			end 
 		else if (RUWr && rd != 0)  // No escribir en x0
 			registers_mem[rd] <= DataWr;
-	end 
+	end
 endmodule

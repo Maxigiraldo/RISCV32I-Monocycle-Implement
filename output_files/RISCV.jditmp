@@ -1,8 +1,16 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="70c076c497a142f901c2"/>
+    <hash md5_digest_80b="100c60a06e72fa6a8ec4"/>
   </project>
   <file_info>
     <file device="5CSEMA5F31C6" path="RISCV.sof" usercode="0xFFFFFFFF"/>
   </file_info>
+  <sld_infos>
+    <sld_info hpath="VGA_Controller:VGA_Controller|clock1280x800:vgaclock|vgaClock:clk" name="clk">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME vgaClock HAS_SOPCINFO 1 GENERATION_ID 1745791527"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
 </sld_project_info>

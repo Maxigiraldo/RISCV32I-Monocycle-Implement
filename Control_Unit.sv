@@ -9,7 +9,7 @@ module Control_Unit (
 	output reg [3:0] Alu_OP,
 	output reg [2:0] BrOP,
 	output reg DMWR,
-	output reg DMCtrl,
+	output reg [2:0] DMCtrl,
 	output reg [1:0] RUDataWrSrc
 );
 
@@ -22,7 +22,7 @@ always@(*)
 		Alu_OP = 4'h0;
 		BrOP = 3'h0;
 		DMWR = 1'b0;
-		DMCtrl = 1'b0;
+		DMCtrl = 3'b0;
 		RUDataWrSrc = 2'h0;
 		case (opcode)
 			7'b0110011: // Tipo R
@@ -73,7 +73,7 @@ always@(*)
 					ALUBSrcEN = 1'b1;     // ALU suma base + offset
 					Alu_OP = 4'b0000;    // ADD
 					DMWR = 1'b0;
-					DMCtrl = 1'b1;      
+					DMCtrl = func3;      
 				end
 			7'b0100011: // Tipo S
 				begin  // sw, sh, sb
@@ -83,7 +83,7 @@ always@(*)
 					Alu_OP = 4'b0000;    // ADD
 					IMMSrc = 3'b001;      // Tipo S
 					DMWR = 1'b1;             // Escribir en memoria
-					DMCtrl = 1'b0;
+					DMCtrl = func3;
 				 end
 			 7'b1100011: // Tipo B
 				begin  // beq, bne, blt, bge, bltu, bgeu

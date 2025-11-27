@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/simulation/questa
+valtera_up_avalon_reset_from_locked_signal
+Z1 !s110 1764210277
+!i10b 1
+!s100 21LY9FTb`4C4iU[D9:fdD3
+IkP1;cCjH4SH3^f_am]1DN2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1762550794
+8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v
+FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v
+L0 28
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1764210277.000000
+!s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/altera_up_avalon_reset_from_locked_signal.v|
+!i113 1
+Z6 o-vlog01compat -work vgaClock
+Z7 !s92 -vlog01compat -work vgaClock +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules
+Z8 tCvgOpt 0
+vvgaClock
+R1
+!i10b 1
+!s100 Bn;S5HSE`2=Q]^lV@SPG<0
+IQjBQm;@:=@lKbCMHCV@cU3
+R2
+R0
+R3
+8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/vgaClock.v
+FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/vgaClock.v
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/vgaClock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/vgaClock.v|
+!i113 1
+R6
+!s92 -vlog01compat -work vgaClock +incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis
+R8
+nvga@clock
+vvgaClock_video_pll_0
+R1
+!i10b 1
+!s100 M4Re0^z_UkLFa?4ah@`MZ0
+IYk^DA0jRW<WE4GSJ>Tzda3
+R2
+R0
+R3
+8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0.v
+FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0.v
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0.v|
+!i113 1
+R6
+R7
+R8
+nvga@clock_video_pll_0
+vvgaClock_video_pll_0_video_pll
+R1
+!i10b 1
+!s100 7IR[?MnL?j:D3C]B4NehG0
+I_66FF08e4EXJM81_elPVj3
+R2
+R0
+R3
+8C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v
+FC:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|vgaClock|+incdir+C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules|C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.v|
+!i113 1
+R6
+R7
+R8
+nvga@clock_video_pll_0_video_pll

@@ -2,36 +2,38 @@
 
 module TB_Riscv();
 
-reg clk;
-reg rst;
+reg clk, clk_dedicated;
+reg rst, rst_dedicated;
 reg sw1, sw2, sw3, sw4;
 
-// wire [31:0] PC;
-// wire [31:0] Result;
-// wire [31:0] Recover;
-// wire [31:0] Inst_View;
 wire [6:0] hex0, hex1, hex2, hex3, hex4, hex5;
-wire [31:0] visualization;
+wire [7:0] vga_red, vga_green, vga_blue;
+wire vga_hsync, vga_vsync, vgaclock;
 
-RISCV RISCV (
+
+Top_module_RISCV Top_module_RISCV (
 	.clk(clk),
+	.clk_dedicated(clk_dedicated),
 	.rst(rst),
 	.sw1(sw1),
 	.sw2(sw2),
 	.sw3(sw3),
 	.sw4(sw4),
-//	.PC(PC),
-//	.Result(Result),
-//	.Recover(Recover),
-//	.Inst_View(Inst_View),
-	.visualization(visualization),
 	.hex0(hex0),
 	.hex1(hex1),
 	.hex2(hex2),
 	.hex3(hex3),
 	.hex4(hex4),
-	.hex5(hex5)
+	.hex5(hex5),
+	.vga_red(vga_red),
+   .vga_green(vga_green),
+   .vga_blue(vga_blue),
+   .vga_hsync(vga_hsync),
+   .vga_vsync(vga_vsync),
+   .vga_clock(vgaclock)
 );
+
+always #6 clk_dedicated = ~clk_dedicated; // Aproximadamente 83 MHz para VGA
 
 always #20 clk = ~clk;
 
@@ -39,10 +41,11 @@ initial begin
 	$display("========== Iniciando Test RISCV ==========\n");
 	
 	// Monitor en cada ciclo
-	$monitor("T=%0t | CLK=%b | RST=%b | Visualization=%h | hex5=%h | hex4=%h | hex3=%h | hex2=%h | hex1=%h | hex0=%h", 
-		$time, clk, rst, visualization, hex5, hex4, hex3, hex2, hex1, hex0);
+	$monitor("T=%0t | CLK=%b | FPGA_CLK=%h | RST=%b | hex5=%h | hex4=%h | hex3=%h | hex2=%h | hex1=%h | hex0=%h | red=%h | green=%h | blue=%h | hsync=%h | vsync=%h | vgaclock=%h", 
+		$time, clk, clk_dedicated, rst, hex5, hex4, hex3, hex2, hex1, hex0, vga_red, vga_green, vga_blue, vga_hsync, vga_vsync, vga_clock);
 	
 	clk = 0;
+	clk_dedicated = 0;
 	rst = 0;
 	sw1 = 1;
 	#25;

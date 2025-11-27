@@ -4,131 +4,135 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "visualization[0]",
+					"name" : "hex2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[1]",
+					"name" : "hex2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[2]",
+					"name" : "hex2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[3]",
+					"name" : "hex2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[4]",
+					"name" : "hex2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[5]",
+					"name" : "hex2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[6]",
+					"name" : "hex2[6]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[7]",
+					"name" : "vga_red[0]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[8]",
+					"name" : "vga_red[1]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[9]",
+					"name" : "vga_red[2]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[10]",
+					"name" : "vga_red[3]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[11]",
+					"name" : "vga_red[4]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[12]",
+					"name" : "vga_red[5]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[13]",
+					"name" : "vga_red[6]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[14]",
+					"name" : "vga_red[7]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[15]",
+					"name" : "vga_green[0]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[16]",
+					"name" : "vga_green[1]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[17]",
+					"name" : "vga_green[2]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[18]",
+					"name" : "vga_green[3]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[19]",
+					"name" : "vga_green[4]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[20]",
+					"name" : "vga_green[5]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[21]",
+					"name" : "vga_green[6]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[22]",
+					"name" : "vga_green[7]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[23]",
+					"name" : "vga_blue[0]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[24]",
+					"name" : "vga_blue[1]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[25]",
+					"name" : "vga_blue[2]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[26]",
+					"name" : "vga_blue[3]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[27]",
+					"name" : "vga_blue[4]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[28]",
+					"name" : "vga_blue[5]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[29]",
+					"name" : "vga_blue[6]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[30]",
+					"name" : "vga_blue[7]",
 					"strict" : false
 				},
 				{
-					"name" : "visualization[31]",
+					"name" : "vga_hsync",
+					"strict" : false
+				},
+				{
+					"name" : "vga_vsync",
 					"strict" : false
 				},
 				{
@@ -185,34 +189,6 @@
 				},
 				{
 					"name" : "hex1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[6]",
 					"strict" : false
 				},
 				{
@@ -321,6 +297,10 @@
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_dedicated",
 					"strict" : false
 				}
 			]

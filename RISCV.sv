@@ -6,16 +6,21 @@ module RISCV (
 	input sw3,
 	input sw4,
 	output wire [31:0] visualization,
-//	output wire [31:0] PC,
-//	output wire [31:0] Result,
-//	output wire [31:0] Recover,
-//	output wire [31:0] Inst_View
-	output [6:0] hex0,
-	output [6:0] hex1,
-	output [6:0] hex2,
-	output [6:0] hex3,
-	output [6:0] hex4,
-	output [6:0] hex5
+	output wire [31:0] PC,
+	output wire [31:0] Result,
+	output wire [31:0] Recover,
+	output wire [31:0] Inst_View,
+	output wire [6:0] opcode_view,
+	output wire [2:0] func3_view,
+	output wire [6:0] func7_view,
+	output wire [4:0] rs1_view,
+	output wire [4:0] rs2_view,
+	output wire [4:0] rd_view,
+	output wire [31:0] immediate_view,
+	output wire [31:0] WriteBack_view,
+	output wire Branch_view,
+	output wire [31:0] registers_view [31:0]
+	
 ); 
 
 // Address
@@ -44,6 +49,8 @@ assign rd = instruction[11:7];
 // Register
 wire [31:0] RU1;
 wire [31:0] RU2;
+wire [31:0] regs_view [0:31];
+
 
 // Control
 wire RUWr;
@@ -53,7 +60,7 @@ wire ALUBSrcEN;
 wire [3:0] Alu_OP;
 wire [2:0] BrOP;
 wire DMWR;
-wire DMCtrl;
+wire [2:0] DMCtrl;
 wire [1:0] RUDataWrSrc;
 
 // ALU
@@ -130,7 +137,8 @@ Registers_Unit Registers_Unit (
 	.DataWr(WriteBack),
 	.RUWr(RUWr),
 	.RU1(RU1),
-	.RU2(RU2)
+	.RU2(RU2),
+	.registers_out(regs_view)
 );
 
 Imm_Generator IMM_Generator (
@@ -198,10 +206,20 @@ Write_Back_Data Write_Back_Data (
 
 
 // Visualizacion
-// assign PC = address;
-// assign Result = Alu_result;
-// assign Recover = DataRead;
-// assign Inst_View = instruction;
+assign PC = address;
+assign Result = Alu_result;
+assign Recover = DataRead;
+assign Inst_View = instruction;
+assign opcode_view = opcode;
+assign func3_view = func3;
+assign func7_view = func7;
+assign rs1_view = rs1;
+assign rs2_view = rs2;
+assign rd_view = rd;
+assign immediate_view = immediate;
+assign WriteBack_view = WriteBack;
+assign Branch_view = BrEN;
+assign registers_view = regs_view;
 
 assign visualization = (!rst)    ? 32'b0 :
                        (sw1)     ? address :
@@ -209,46 +227,4 @@ assign visualization = (!rst)    ? 32'b0 :
                        (sw3)     ? DataRead :
                        (sw4)     ? instruction :
                                    32'b0;
-
-wire [3:0] hex_d0;
-wire [3:0] hex_d1;
-wire [3:0] hex_d2;
-wire [3:0] hex_d3;
-wire [3:0] hex_d4;
-wire [3:0] hex_d5;
-
-assign hex_d0 = visualization[3:0];
-assign hex_d1 = visualization[7:4];
-assign hex_d2 = visualization[11:8];
-assign hex_d3 = visualization[15:12];
-assign hex_d4 = visualization[19:16];
-assign hex_d5 = visualization[23:20];
-
-
-hex7seg result5 (
-		.hex_in(hex_d5),
-		.segments(hex5)
-	);
-	
-hex7seg result4 (
-	.hex_in(hex_d4),
-	.segments(hex4)
-);
-hex7seg result3 (
-	.hex_in(hex_d3),
-	.segments(hex3)
-);
-hex7seg result2 (
-	.hex_in(hex_d2),
-	.segments(hex2)
-);
-hex7seg result1 (
-	.hex_in(hex_d1),
-	.segments(hex1)
-);
-hex7seg result0 (
-	.hex_in(hex_d0),
-	.segments(hex0)
-);
-
 endmodule
