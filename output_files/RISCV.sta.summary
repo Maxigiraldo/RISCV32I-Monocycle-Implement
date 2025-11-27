@@ -2,44 +2,44 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -25.103
-TNS   : -7934.563
-
 Type  : Slow 1100mV 85C Model Setup 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -24.935
-TNS   : -773.907
+Slack : -25.372
+TNS   : -776.111
+
+Type  : Slow 1100mV 85C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -23.651
+TNS   : -8252.248
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -20.952
-TNS   : -73484.831
+Slack : -19.820
+TNS   : -72763.386
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : -2.584
-TNS   : -151.388
-
-Type  : Slow 1100mV 85C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : 0.133
-TNS   : 0.000
+Slack : -0.372
+TNS   : -21.572
 
 Type  : Slow 1100mV 85C Model Hold 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.388
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
+Slack : 1.781
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -1.825
-TNS   : -176.842
+Slack : -0.659
+TNS   : -32.846
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.538
-TNS   : -3695.613
+Slack : -0.536
+TNS   : -3694.652
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 1.500
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 5.293
+Slack : 5.287
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_dedicated'
@@ -47,131 +47,131 @@ Slack : 9.670
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -24.299
-TNS   : -755.311
+Slack : -24.976
+TNS   : -761.879
 
 Type  : Slow 1100mV 0C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -24.258
-TNS   : -7674.617
+Slack : -22.928
+TNS   : -7978.828
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -20.261
-TNS   : -71206.451
+Slack : -19.131
+TNS   : -70565.436
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : -2.503
-TNS   : -164.328
-
-Type  : Slow 1100mV 0C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : 0.091
-TNS   : 0.000
+Slack : -0.468
+TNS   : -30.639
 
 Type  : Slow 1100mV 0C Model Hold 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.283
+Slack : 0.477
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
+Slack : 1.811
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -1.770
-TNS   : -171.856
+Slack : -0.677
+TNS   : -36.143
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.506
-TNS   : -3580.590
+Slack : -0.510
+TNS   : -3576.508
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 1.500
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 5.245
+Slack : 5.244
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_dedicated'
 Slack : 9.673
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -15.673
-TNS   : -4354.746
-
 Type  : Fast 1100mV 85C Model Setup 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -15.186
-TNS   : -468.042
+Slack : -14.653
+TNS   : -450.802
+
+Type  : Fast 1100mV 85C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -14.273
+TNS   : -4526.402
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -13.594
-TNS   : -45501.093
+Slack : -12.706
+TNS   : -44745.719
 
 Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : -1.350
-TNS   : -3.246
-
-Type  : Fast 1100mV 85C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -0.130
-TNS   : -0.130
-
-Type  : Fast 1100mV 85C Model Hold 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.208
+Slack : 0.069
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -1.098
-TNS   : -81.632
+Type  : Fast 1100mV 85C Model Hold 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
+Slack : 1.248
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.641
-TNS   : -3688.882
+Slack : -0.639
+TNS   : -3686.895
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
+Slack : -0.261
+TNS   : -9.186
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 1.500
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 5.547
+Slack : 5.549
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_dedicated'
 Slack : 9.336
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : -13.948
-TNS   : -4006.312
-
 Type  : Fast 1100mV 0C Model Setup 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -13.680
-TNS   : -423.046
+Slack : -13.361
+TNS   : -409.499
+
+Type  : Fast 1100mV 0C Model Setup 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -12.735
+TNS   : -4153.303
 
 Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -11.839
-TNS   : -39952.062
+Slack : -10.991
+TNS   : -39234.226
 
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : -1.442
-TNS   : -24.446
-
-Type  : Fast 1100mV 0C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -0.085
-TNS   : -0.085
+Slack : -0.113
+TNS   : -0.583
 
 Type  : Fast 1100mV 0C Model Hold 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 0.198
+Slack : 0.253
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
-Slack : -0.877
-TNS   : -64.419
+Type  : Fast 1100mV 0C Model Hold 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
+Slack : 1.086
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.663
-TNS   : -3920.158
+Slack : -0.664
+TNS   : -3926.399
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'RISCV:RISCV|Program_Counter:Program_Counter|address[2]'
+Slack : -0.159
+TNS   : -5.202
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
 Slack : 1.500
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA_Controller|vgaclock|clk|video_pll_0|video_pll|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk'
-Slack : 5.539
+Slack : 5.540
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_dedicated'

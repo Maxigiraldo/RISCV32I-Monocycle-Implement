@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RISCV
-Wed Nov 26 21:08:05 2025
+Wed Nov 26 21:34:05 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -56,13 +56,13 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 26 21:08:05 2025           ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 26 21:34:04 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; RISCV                                           ;
 ; Top-level Entity Name           ; Top_module_RISCV                                ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 5004                                            ;
+; Total registers                 ; 5028                                            ;
 ; Total pins                      ; 77                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -171,16 +171,16 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 14          ;
 ;                            ;             ;
-; Average used               ; 2.22        ;
+; Average used               ; 2.70        ;
 ; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  28.9%      ;
-;     Processor 3            ;  25.5%      ;
-;     Processor 4            ;  25.5%      ;
-;     Processor 5            ;  25.5%      ;
-;     Processor 6            ;  16.3%      ;
+;     Processor 2            ;  33.9%      ;
+;     Processor 3            ;  33.9%      ;
+;     Processor 4            ;  33.9%      ;
+;     Processor 5            ;  33.9%      ;
+;     Processor 6            ;  33.9%      ;
 ;     Processor 7            ;   0.1%      ;
 ;     Processor 8            ;   0.1%      ;
 ;     Processors 9-14        ;   0.1%      ;
@@ -231,16 +231,16 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 4252      ;
+; Estimate of Logic utilization (ALMs needed) ; 4269      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 4192      ;
-;     -- 7 input functions                    ; 83        ;
-;     -- 6 input functions                    ; 2407      ;
-;     -- 5 input functions                    ; 754       ;
-;     -- 4 input functions                    ; 551       ;
-;     -- <=3 input functions                  ; 397       ;
+; Combinational ALUT usage for logic          ; 4175      ;
+;     -- 7 input functions                    ; 78        ;
+;     -- 6 input functions                    ; 2395      ;
+;     -- 5 input functions                    ; 763       ;
+;     -- 4 input functions                    ; 527       ;
+;     -- <=3 input functions                  ; 412       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 5004      ;
+; Dedicated logic registers                   ; 5028      ;
 ;                                             ;           ;
 ; I/O pins                                    ; 77        ;
 ;                                             ;           ;
@@ -250,9 +250,9 @@ on the Quartus Prime software download page.
 ;     -- PLLs                                 ; 2         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
-; Maximum fan-out                             ; 4358      ;
-; Total fan-out                               ; 41172     ;
-; Average fan-out                             ; 4.40      ;
+; Maximum fan-out                             ; 4371      ;
+; Total fan-out                               ; 41112     ;
+; Average fan-out                             ; 4.39      ;
 +---------------------------------------------+-----------+
 
 
@@ -261,33 +261,33 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
 ; Compilation Hierarchy Node                                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                   ; Entity Name                    ; Library Name ;
 +-----------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------+--------------+
-; |Top_module_RISCV                                         ; 4192 (0)            ; 5004 (0)                  ; 0                 ; 0          ; 77   ; 0            ; |Top_module_RISCV                                                                                                                                                                     ; Top_module_RISCV               ; work         ;
-;    |RISCV:RISCV|                                          ; 2651 (60)           ; 4030 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV                                                                                                                                                         ; RISCV                          ; work         ;
-;       |ALU_Module:ALU_Module|                             ; 430 (430)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|ALU_Module:ALU_Module                                                                                                                                   ; ALU_Module                     ; work         ;
+; |Top_module_RISCV                                         ; 4175 (0)            ; 5028 (0)                  ; 0                 ; 0          ; 77   ; 0            ; |Top_module_RISCV                                                                                                                                                                     ; Top_module_RISCV               ; work         ;
+;    |RISCV:RISCV|                                          ; 2654 (57)           ; 4030 (0)                  ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV                                                                                                                                                         ; RISCV                          ; work         ;
+;       |ALU_Module:ALU_Module|                             ; 427 (427)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|ALU_Module:ALU_Module                                                                                                                                   ; ALU_Module                     ; work         ;
 ;       |AluASrc:Alu_A|                                     ; 62 (62)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|AluASrc:Alu_A                                                                                                                                           ; AluASrc                        ; work         ;
-;       |AluBSrc:Alu_B|                                     ; 68 (68)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|AluBSrc:Alu_B                                                                                                                                           ; AluBSrc                        ; work         ;
+;       |AluBSrc:Alu_B|                                     ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|AluBSrc:Alu_B                                                                                                                                           ; AluBSrc                        ; work         ;
 ;       |Control_Unit:Control_unit|                         ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Control_Unit:Control_unit                                                                                                                               ; Control_Unit                   ; work         ;
-;       |Data_Memory:Data_Memory|                           ; 1511 (1511)         ; 3232 (3232)               ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory                                                                                                                                 ; Data_Memory                    ; work         ;
+;       |Data_Memory:Data_Memory|                           ; 1522 (1522)         ; 3232 (3232)               ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory                                                                                                                                 ; Data_Memory                    ; work         ;
 ;       |Imm_Generator:IMM_Generator|                       ; 27 (27)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Imm_Generator:IMM_Generator                                                                                                                             ; Imm_Generator                  ; work         ;
-;       |Instruction_Memory:Instruction_Memory|             ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Instruction_Memory:Instruction_Memory                                                                                                                   ; Instruction_Memory             ; work         ;
+;       |Instruction_Memory:Instruction_Memory|             ; 36 (36)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Instruction_Memory:Instruction_Memory                                                                                                                   ; Instruction_Memory             ; work         ;
 ;       |Program_Counter:Program_Counter|                   ; 0 (0)               ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Program_Counter:Program_Counter                                                                                                                         ; Program_Counter                ; work         ;
-;       |Registers_Unit:Registers_Unit|                     ; 383 (383)           ; 768 (768)                 ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit                                                                                                                           ; Registers_Unit                 ; work         ;
+;       |Registers_Unit:Registers_Unit|                     ; 416 (416)           ; 768 (768)                 ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit                                                                                                                           ; Registers_Unit                 ; work         ;
 ;       |Sum4:Sum4|                                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Sum4:Sum4                                                                                                                                               ; Sum4                           ; work         ;
 ;       |Write_Back_Data:Write_Back_Data|                   ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|RISCV:RISCV|Write_Back_Data:Write_Back_Data                                                                                                                         ; Write_Back_Data                ; work         ;
-;    |VGA_Controller:VGA_Controller|                        ; 1499 (1438)         ; 974 (953)                 ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller                                                                                                                                       ; VGA_Controller                 ; work         ;
+;    |VGA_Controller:VGA_Controller|                        ; 1479 (1416)         ; 998 (977)                 ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller                                                                                                                                       ; VGA_Controller                 ; work         ;
 ;       |clock1280x800:vgaclock|                            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|clock1280x800:vgaclock                                                                                                                ; clock1280x800                  ; work         ;
 ;          |vgaClock:clk|                                   ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|clock1280x800:vgaclock|vgaClock:clk                                                                                                   ; vgaClock                       ; vgaClock     ;
 ;             |vgaClock_video_pll_0:video_pll_0|            ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|clock1280x800:vgaclock|vgaClock:clk|vgaClock_video_pll_0:video_pll_0                                                                  ; vgaClock_video_pll_0           ; vgaClock     ;
 ;                |vgaClock_video_pll_0_video_pll:video_pll| ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|clock1280x800:vgaclock|vgaClock:clk|vgaClock_video_pll_0:video_pll_0|vgaClock_video_pll_0_video_pll:video_pll                         ; vgaClock_video_pll_0_video_pll ; vgaClock     ;
 ;                   |altera_pll:altera_pll_i|               ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|clock1280x800:vgaclock|vgaClock:clk|vgaClock_video_pll_0:video_pll_0|vgaClock_video_pll_0_video_pll:video_pll|altera_pll:altera_pll_i ; altera_pll                     ; work         ;
-;       |lpm_divide:Mod0|                                   ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0                                                                                                                       ; lpm_divide                     ; work         ;
-;          |lpm_divide_52m:auto_generated|                  ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0|lpm_divide_52m:auto_generated                                                                                         ; lpm_divide_52m                 ; work         ;
-;             |sign_div_unsign_8kh:divider|                 ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider                                                             ; sign_div_unsign_8kh            ; work         ;
-;                |alt_u_div_mse:divider|                    ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_mse:divider                                       ; alt_u_div_mse                  ; work         ;
-;       |lpm_divide:Mod1|                                   ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1                                                                                                                       ; lpm_divide                     ; work         ;
-;          |lpm_divide_52m:auto_generated|                  ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1|lpm_divide_52m:auto_generated                                                                                         ; lpm_divide_52m                 ; work         ;
-;             |sign_div_unsign_8kh:divider|                 ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider                                                             ; sign_div_unsign_8kh            ; work         ;
-;                |alt_u_div_mse:divider|                    ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_mse:divider                                       ; alt_u_div_mse                  ; work         ;
+;       |lpm_divide:Mod0|                                   ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0                                                                                                                       ; lpm_divide                     ; work         ;
+;          |lpm_divide_52m:auto_generated|                  ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0|lpm_divide_52m:auto_generated                                                                                         ; lpm_divide_52m                 ; work         ;
+;             |sign_div_unsign_8kh:divider|                 ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider                                                             ; sign_div_unsign_8kh            ; work         ;
+;                |alt_u_div_mse:divider|                    ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod0|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_mse:divider                                       ; alt_u_div_mse                  ; work         ;
+;       |lpm_divide:Mod1|                                   ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1                                                                                                                       ; lpm_divide                     ; work         ;
+;          |lpm_divide_52m:auto_generated|                  ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1|lpm_divide_52m:auto_generated                                                                                         ; lpm_divide_52m                 ; work         ;
+;             |sign_div_unsign_8kh:divider|                 ; 17 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider                                                             ; sign_div_unsign_8kh            ; work         ;
+;                |alt_u_div_mse:divider|                    ; 17 (17)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|lpm_divide:Mod1|lpm_divide_52m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_mse:divider                                       ; alt_u_div_mse                  ; work         ;
 ;       |vga_controller_1280x800:pt|                        ; 29 (29)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|VGA_Controller:VGA_Controller|vga_controller_1280x800:pt                                                                                                            ; vga_controller_1280x800        ; work         ;
 ;    |hex7seg:result0|                                      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|hex7seg:result0                                                                                                                                                     ; hex7seg                        ; work         ;
 ;    |hex7seg:result1|                                      ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Top_module_RISCV|hex7seg:result1                                                                                                                                                     ; hex7seg                        ; work         ;
@@ -512,6 +512,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][11] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][11] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][11] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][25] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][25] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[27][25] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[26][25] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][25] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][25] ; Stuck at GND due to stuck port data_in                        ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][25] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][28] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][28] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[27][28] ; Stuck at GND due to stuck port data_in                        ;
@@ -533,13 +540,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][26] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][26] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][26] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][25] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][25] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[27][25] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[26][25] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][25] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][25] ; Stuck at GND due to stuck port data_in                        ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][25] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][24] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][24] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[27][24] ; Stuck at GND due to stuck port data_in                        ;
@@ -673,6 +673,62 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][29] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][29] ; Stuck at GND due to stuck port data_in                        ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][29] ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][30]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][14]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][22]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][6]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][26]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][18]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][10]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][2]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][29]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][29]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][21]                 ; Stuck at GND due to stuck port data_in                        ;
@@ -717,186 +773,130 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; VGA_Controller:VGA_Controller|registers[30][9]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][1]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][1]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][25]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][25]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[29][25]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][9]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][9]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][9]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][17]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][1]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][17]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][1]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[29][17]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][9]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[29][1]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][30]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][14]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][22]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][6]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][2]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][2]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][2]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][2]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][26]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][18]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][2]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][10]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][2]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][2]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][25]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][17]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][25]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][17]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][9]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][1]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][9]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][1]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][31]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][15]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][31]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][15]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][23]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][7]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][31]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][15]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][23]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][7]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][31]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][31]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][23]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][23]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][15]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][15]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][7]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][31]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][23]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][15]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][7]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][31]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][23]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][15]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][7]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][31]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[27][31]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][23]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][23]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][15]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[27][15]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][23]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][23]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][7]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[27][7]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][31]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][15]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][23]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][7]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][27]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][27]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][19]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][19]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][27]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][27]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][19]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][19]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][19]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][19]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][11]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][11]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][3]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][3]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][11]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][11]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][3]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][3]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][3]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][3]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][27]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][11]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][27]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][27]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][11]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][11]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][19]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][3]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][19]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[11][3]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][27]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[27][19]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][11]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[27][3]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][20]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][27]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][19]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][11]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][3]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][20]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][20]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][20]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][20]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][20]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][28]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][20]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][16]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][16]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][16]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][28]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][24]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][16]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][16]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][4]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][8]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[29][0]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][4]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][4]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[14][4]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[30][4]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][4]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][12]                 ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][4]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[10][8]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[10][0]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][8]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[11][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][12]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][8]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[10][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[14][16]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[14][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][28]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][24]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][12]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][8]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[11][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][28]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][28]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][24]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][24]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][28]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][28]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][24]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][24]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][20]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][16]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][12]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[26][8]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[26][0]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][8]                  ; Stuck at GND due to stuck port data_in                        ;
-; VGA_Controller:VGA_Controller|registers[27][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][12]                 ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][8]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][12]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][8]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][12]                 ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][8]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[29][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[30][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][4]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[26][0]                  ; Stuck at GND due to stuck port data_in                        ;
 ; VGA_Controller:VGA_Controller|registers[30][0]                  ; Stuck at GND due to stuck port data_in                        ;
+; VGA_Controller:VGA_Controller|registers[27][0]                  ; Stuck at GND due to stuck port data_in                        ;
 ; Total Number of Removed Registers = 547                         ;                                                               ;
 +-----------------------------------------------------------------+---------------------------------------------------------------+
 
@@ -1032,6 +1032,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                                                 ; due to stuck port data_in ;                                                 ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][11] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[14][11] ;
 ;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[11][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[10][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[27][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[27][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[26][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[26][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[30][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[29][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
+; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[14][25] ;
+;                                                                 ; due to stuck port data_in ;                                                 ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][28] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[11][28] ;
 ;                                                                 ; due to stuck port data_in ;                                                 ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][28] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[10][28] ;
@@ -1073,20 +1087,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][26] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[29][26] ;
 ;                                                                 ; due to stuck port data_in ;                                                 ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][26] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[14][26] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[11][25] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[10][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[10][25] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[27][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[27][25] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[26][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[26][25] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[30][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[30][25] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[29][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[29][25] ;
-;                                                                 ; due to stuck port data_in ;                                                 ;
-; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[14][25] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[14][25] ;
 ;                                                                 ; due to stuck port data_in ;                                                 ;
 ; RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[11][24] ; Stuck at GND              ; VGA_Controller:VGA_Controller|registers[11][24] ;
 ;                                                                 ; due to stuck port data_in ;                                                 ;
@@ -1362,7 +1362,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5004  ;
+; Total registers                              ; 5028  ;
 ; Number of registers using Synchronous Clear  ; 4966  ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 21    ;
@@ -1701,12 +1701,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 21:1               ; 3 bits    ; 42 LEs        ; 36 LEs               ; 6 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|ALU_Module:ALU_Module|Mux28                         ;
 ; 22:1               ; 3 bits    ; 42 LEs        ; 39 LEs               ; 3 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|ALU_Module:ALU_Module|Mux3                          ;
 ; 5:1                ; 32 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit|RU1[30]               ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|visualization[10]                                   ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit|RU2[24]               ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|visualization[8]                                    ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit|RU2[23]               ;
 ; 128:1              ; 2 bits    ; 170 LEs       ; 140 LEs              ; 30 LEs                 ; No         ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory|Mux16                       ;
-; 132:1              ; 16 bits   ; 1408 LEs      ; 1152 LEs             ; 256 LEs                ; No         ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory|Mux32                       ;
+; 132:1              ; 16 bits   ; 1408 LEs      ; 1152 LEs             ; 256 LEs                ; No         ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory|Mux33                       ;
 ; 131:1              ; 7 bits    ; 609 LEs       ; 497 LEs              ; 112 LEs                ; No         ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory|Mux57                       ;
-; 131:1              ; 7 bits    ; 609 LEs       ; 504 LEs              ; 105 LEs                ; No         ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory|Mux53                       ;
+; 131:1              ; 7 bits    ; 609 LEs       ; 504 LEs              ; 105 LEs                ; No         ; |Top_module_RISCV|RISCV:RISCV|Data_Memory:Data_Memory|Mux52                       ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[16][22] ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[8][13]  ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |Top_module_RISCV|RISCV:RISCV|Registers_Unit:Registers_Unit|registers_mem[24][14] ;
@@ -1750,12 +1750,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|current_char                      ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|current_char                      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|current_char                      ;
-; 8:1                ; 12 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux7                              ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux12                             ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux16                             ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux3                              ;
-; 256:1              ; 4 bits    ; 680 LEs       ; 680 LEs              ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux284                            ;
-; 256:1              ; 4 bits    ; 680 LEs       ; 680 LEs              ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux154                            ;
+; 8:1                ; 12 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux5                              ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux13                             ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux19                             ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux1                              ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 680 LEs              ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux287                            ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 680 LEs              ; 0 LEs                  ; No         ; |Top_module_RISCV|VGA_Controller:VGA_Controller|Mux152                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------+
 
 
@@ -2135,15 +2135,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 5004                        ;
+; arriav_ff             ; 5028                        ;
 ;     CLR SCLR          ; 11                          ;
 ;     ENA               ; 16                          ;
 ;     ENA CLR SCLR      ; 10                          ;
 ;     ENA SCLR          ; 3968                        ;
 ;     SCLR              ; 947                         ;
 ;     SCLR SLD          ; 30                          ;
-;     plain             ; 22                          ;
-; arriav_lcell_comb     ; 4207                        ;
+;     plain             ; 46                          ;
+; arriav_lcell_comb     ; 4183                        ;
 ;     arith             ; 98                          ;
 ;         0 data inputs ; 4                           ;
 ;         1 data inputs ; 53                          ;
@@ -2151,23 +2151,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 1                           ;
 ;         5 data inputs ; 31                          ;
-;     extend            ; 83                          ;
-;         7 data inputs ; 83                          ;
-;     normal            ; 4016                        ;
-;         1 data inputs ; 15                          ;
-;         2 data inputs ; 120                         ;
-;         3 data inputs ; 201                         ;
-;         4 data inputs ; 550                         ;
-;         5 data inputs ; 723                         ;
-;         6 data inputs ; 2407                        ;
+;     extend            ; 78                          ;
+;         7 data inputs ; 78                          ;
+;     normal            ; 3997                        ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 108                         ;
+;         3 data inputs ; 228                         ;
+;         4 data inputs ; 526                         ;
+;         5 data inputs ; 732                         ;
+;         6 data inputs ; 2395                        ;
 ;     shared            ; 10                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 8                           ;
 ; boundary_port         ; 77                          ;
 ; generic_pll           ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 17.00                       ;
-; Average LUT depth     ; 10.88                       ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 10.71                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2176,7 +2176,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -2186,7 +2186,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Wed Nov 26 21:07:47 2025
+    Info: Processing started: Wed Nov 26 21:33:45 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RISCV -c RISCV
 Warning (125092): Tcl Script File vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.qip not found
     Info (125063): set_global_assignment -name QIP_FILE vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.qip -qip vgaClock/synthesis/vgaClock.qip -library vgaClock
@@ -2439,27 +2439,19 @@ Warning (125092): Tcl Script File vgaClock/synthesis/submodules/vgaClock_video_p
 Warning (125092): Tcl Script File vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.qip not found
     Info (125063): set_global_assignment -name QIP_FILE vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.qip -qip vgaClock/synthesis/vgaClock.qip -library vgaClock
 Info (286030): Timing-Driven Synthesis is running
-Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~42" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~167" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~226" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~230" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~261" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~269" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
-    Info (17048): Logic cell "VGA_Controller:VGA_Controller|Mux288~394" File: C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/VGA_Controller.sv Line: 408
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 8 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
 Warning: OUTCLK port on the PLL is not properly connected on instance VGA_Controller:VGA_Controller|clock1280x800:vgaclock|vgaClock:clk|vgaClock_video_pll_0:video_pll_0|vgaClock_video_pll_0_video_pll:video_pll|altera_pll:altera_pll_i|general[0].gpll. The output clock port on the PLL must be connected. File: c:/intelfpga_lite/24.1std/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Info (21057): Implemented 9212 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 9233 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 69 output pins
-    Info (21061): Implemented 9133 logic cells
+    Info (21061): Implemented 9154 logic cells
     Info (21065): Implemented 2 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 5048 megabytes
-    Info: Processing ended: Wed Nov 26 21:08:05 2025
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Peak virtual memory: 5049 megabytes
+    Info: Processing ended: Wed Nov 26 21:34:05 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:39
 
 

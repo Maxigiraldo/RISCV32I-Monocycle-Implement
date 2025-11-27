@@ -407,19 +407,19 @@ module VGA_Controller (
   
   assign pixel_on = font_data[7 - pix_col];
 
-  always @* begin
-    if (~videoOn) begin
-      {vga_red, vga_green, vga_blue} = 24'h000000;
-    end else if (pixel_on) begin
-      if (is_title) begin
-        {vga_red, vga_green, vga_blue} = 24'h00FF00;
-      end else begin
-        {vga_red, vga_green, vga_blue} = 24'hFFFFFF;
-      end
+  always @(posedge vgaclk) begin
+  if (~videoOn) begin
+    {vga_red, vga_green, vga_blue} <= 24'h000000;
+  end else if (pixel_on) begin
+    if (is_title) begin
+      {vga_red, vga_green, vga_blue} <= 24'h00FF00;
     end else begin
-      {vga_red, vga_green, vga_blue} = 24'h000000;
+      {vga_red, vga_green, vga_blue} <= 24'hFFFFFF;
     end
+  end else begin
+    {vga_red, vga_green, vga_blue} <= 24'h000000;
   end
+end
 
 endmodule
 
