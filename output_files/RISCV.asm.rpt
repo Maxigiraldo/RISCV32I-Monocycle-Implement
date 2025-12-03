@@ -1,5 +1,5 @@
 Assembler report for RISCV
-Tue Dec  2 19:55:11 2025
+Tue Dec  2 20:58:20 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ on the Quartus Prime software download page.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Dec  2 19:55:11 2025 ;
+; Assembler Status      ; Successful - Tue Dec  2 20:58:20 2025 ;
 ; Revision Name         ; RISCV                                 ;
 ; Top-level Entity Name ; Top_module_RISCV                      ;
 ; Family                ; Cyclone V                             ;
@@ -67,8 +67,8 @@ on the Quartus Prime software download page.
 +----------------+----------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                  ;
 +----------------+----------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x018731F1                                                                                               ;
-; Checksum       ; 0x018731F1                                                                                               ;
+; JTAG usercode  ; 0x0187EEDC                                                                                               ;
+; Checksum       ; 0x0187EEDC                                                                                               ;
 +----------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -78,7 +78,7 @@ on the Quartus Prime software download page.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Tue Dec  2 19:55:05 2025
+    Info: Processing started: Tue Dec  2 20:58:15 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off RISCV -c RISCV
 Warning (125092): Tcl Script File vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.qip not found
     Info (125063): set_global_assignment -name QIP_FILE vgaClock/synthesis/submodules/vgaClock_video_pll_0_video_pll.qip -qip vgaClock/synthesis/vgaClock.qip -library vgaClock
@@ -87,8 +87,8 @@ Info (115030): Assembler is generating device programming files
 Warning (12914): The file, C:/Users/maxim/Documents/U-6semestre/Arquitectura/RISCV_Monocycle_Design/vgaClock.sopcinfo, is not embedded into sof file as expected.  Some tools, such as System Console, may not function fully.
 Info: Quartus Prime Assembler was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 5306 megabytes
-    Info: Processing ended: Tue Dec  2 19:55:11 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Tue Dec  2 20:58:20 2025
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

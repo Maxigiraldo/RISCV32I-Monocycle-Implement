@@ -10,7 +10,8 @@ module Top_module_RISCV(
     
     // --- NUEVA ENTRADA: Recibe datos del Bluetooth ---
     input uart_rx,      // Conectar al PIN_AC18 (GPIO_0[0])
-
+	 output uart_tx,
+	 output led,
     output [6:0] hex0,
     output [6:0] hex1,
     output [6:0] hex2,
@@ -45,6 +46,8 @@ module Top_module_RISCV(
         .clk(clk),
         .rst_n(rst),        // Reset del propio programador
         .rx(uart_rx),       // Entrada de datos seriales
+		  .tx(uart_tx),          // Pin TX para devolver el dato (Eco)
+		  .busy_led(led), 
         .prog_addr(prog_addr_wire),
         .prog_data(prog_data_wire),
         .prog_we(prog_we_wire),

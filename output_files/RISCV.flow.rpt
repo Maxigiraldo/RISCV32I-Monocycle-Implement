@@ -1,5 +1,5 @@
 Flow report for RISCV
-Tue Dec  2 19:55:27 2025
+Tue Dec  2 20:58:36 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,16 +41,16 @@ on the Quartus Prime software download page.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Tue Dec  2 19:55:27 2025           ;
+; Flow Status                     ; Successful - Tue Dec  2 20:58:36 2025           ;
 ; Quartus Prime Version           ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                   ; RISCV                                           ;
 ; Top-level Entity Name           ; Top_module_RISCV                                ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 4,535 / 32,070 ( 14 % )                         ;
-; Total registers                 ; 5711                                            ;
-; Total pins                      ; 78 / 457 ( 17 % )                               ;
+; Logic utilization (in ALMs)     ; 4,574 / 32,070 ( 14 % )                         ;
+; Total registers                 ; 5785                                            ;
+; Total pins                      ; 80 / 457 ( 18 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 32,768 / 4,065,280 ( < 1 % )                    ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
@@ -68,7 +68,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2025 19:30:27 ;
+; Start date & time ; 12/02/2025 20:39:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; RISCV               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ on the Quartus Prime software download page.
 +--------------------------------------+------------------------------------------------------------+---------------+------------------+-----------------------------------+
 ; Assignment Name                      ; Value                                                      ; Default Value ; Entity Name      ; Section Id                        ;
 +--------------------------------------+------------------------------------------------------------+---------------+------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 114972521808211.176472182702940                            ; --            ; --               ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 114972521808211.176472597306512                            ; --            ; --               ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                         ; --            ; --               ; TB_Riscv                          ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                        ; --            ; --               ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                        ; --            ; --               ; eda_board_design_boundary_scan    ;
@@ -116,12 +116,12 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:25     ; 2.3                     ; 5024 MB             ; 00:00:51                           ;
-; Fitter               ; 00:24:09     ; 1.0                     ; 7826 MB             ; 01:31:47                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 5306 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:12     ; 4.7                     ; 5581 MB             ; 00:00:46                           ;
+; Analysis & Synthesis ; 00:00:21     ; 2.3                     ; 5053 MB             ; 00:00:42                           ;
+; Fitter               ; 00:18:16     ; 1.1                     ; 7866 MB             ; 01:25:36                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 5306 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:12     ; 4.7                     ; 5597 MB             ; 00:00:45                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4956 MB             ; 00:00:02                           ;
-; Total                ; 00:24:54     ; --                      ; --                  ; 01:33:32                           ;
+; Total                ; 00:18:56     ; --                      ; --                  ; 01:27:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
