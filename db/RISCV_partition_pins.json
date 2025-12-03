@@ -4,34 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "hex2[0]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "hex2[6]",
-					"strict" : false
-				},
-				{
 					"name" : "vga_red[0]",
 					"strict" : false
 				},
@@ -192,6 +164,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "hex2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2[6]",
+					"strict" : false
+				},
+				{
 					"name" : "hex3[0]",
 					"strict" : false
 				},
@@ -296,11 +296,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "rst_dedicated",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "rst_dedicated",
+					"name" : "uart_rx",
 					"strict" : false
 				}
 			]

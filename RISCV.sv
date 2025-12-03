@@ -5,6 +5,9 @@ module RISCV (
 	input sw2,
 	input sw3,
 	input sw4,
+	input  logic [31:0] prog_addr,
+   input  logic [31:0] prog_data,
+   input  logic prog_we,
 	output wire [31:0] visualization,
 	output wire [31:0] PC,
 	output wire [31:0] Result,
@@ -120,7 +123,10 @@ PC_mux PC_mux (
 
 Instruction_Memory Instruction_Memory (
 	.address(address),
-	.instruction(instruction)
+	.instruction(instruction),
+	.prog_addr(prog_addr),
+   .prog_data(prog_data),
+   .prog_we(prog_we)
 );
 
 
